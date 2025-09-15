@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS: mobile first then larger view overrides -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button class="menu-button" aria-label="Toggle Menu">&#9776;</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Favorite Temples</h1>
+    <section class="album">
+      <!-- 9 figures -->
+      <figure>
+        <img src="images/salt-lake.jpg" alt="Salt Lake Temple">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/nauvoo.jpg" alt="Nauvoo Temple">
+        <figcaption>Nauvoo Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/manila.jpg" alt="Manila Temple">
+        <figcaption>Manila Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/aba.jpg" alt="Aba Nigeria Temple">
+        <figcaption>Aba Nigeria Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/paris.jpg" alt="Paris Temple">
+        <figcaption>Paris Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/sydney.jpg" alt="Sydney Temple">
+        <figcaption>Sydney Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rome.jpg" alt="Rome Temple">
+        <figcaption>Rome Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/hongkong.jpg" alt="Hong Kong Temple">
+        <figcaption>Hong Kong Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/tokyo.jpg" alt="Tokyo Temple">
+        <figcaption>Tokyo Temple</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Temple Album | Last Modified: <span id="lastmodified"></span></p>
+  </footer>
+</body>
+</html>

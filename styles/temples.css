@@ -1,0 +1,113 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header and nav */
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: none; /* hidden on mobile until toggled */
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #003366;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+nav ul.show {
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline; /* hover effect */
+  background-color: #b2b7bd;
+}
+
+.menu-button {
+  display: block;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* //My edit */
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h1 {
+  margin-bottom: 1rem;
+  color: #003366;
+  font-family: 'Merriweather', serif;
+}
+
+/* Figures grid: 1 column mobile */
+.album {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+figcaption {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

@@ -1,0 +1,20 @@
+/* Larger screen overrides */
+
+nav ul {
+  display: flex;        /* show nav inline on large screens */
+  position: static;     /* reset absolute */
+  flex-direction: row;
+  background: none;
+  width: auto;
+  padding: 0;
+  gap: 1rem;
+}
+
+.menu-button {
+  display: none; /* hide hamburger on large screens */
+}
+
+/* Figures grid: multi columns */
+.album {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
