@@ -3,66 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals – Darlington Okorie</title>
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Darlington Okorie. Course landing page showcasing assignments, projects, and links.">
-  <meta name="author" content="Darlington Okorie">
-
-  <!-- Base Styles -->
-  <link rel="stylesheet" href="styles/base.css">
-
-  <!-- Google Fonts (with preconnect for performance) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-
-  <!-- JS -->
-  <script src="scripts/getdates.js" defer></script>
+  <title>Nature Album</title>
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
   <header>
-    <span id="course-title">WDD 131</span>
+    <h1>Nature Album</h1>
+    <button class="menu-button" aria-label="Toggle Menu">&#9776;</button>
     <nav>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/darlington-okorie" target="_blank">LinkedIn</a></li>
-        <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
-        <li><a href="final-project/index.html">Final Project</a></li>
-        <li><a href="https://github.com/richiedarl" target="_blank">GitHub</a></li>
-        <li><a href="https://www.byui.edu/" target="_blank">BYU–Idaho</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">About</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Darlington Okorie</h1>
+    <section class="album">
+      <article class="temple-card">
+        <img src="images/forest.jpg" alt="Misty Forest">
+        <h2>Misty Forest</h2>
+        <p>Pacific Northwest, USA</p>
+      </article>
 
-    <!-- Card 1 -->
-    <section class="card">
-      <h2>About Me</h2>
-      <img src="images/profile.jpg" alt="Portrait of Darlington Okorie">
-      <p>
-        Hi! My name is Darlington Okorie, studying under BYU–Idaho through BYUPathway. 
-        I’m passionate about software development, working on web, mobile, and system-level projects. 
-        Outside of coding, I enjoy reading, architecture, and creative writing.
-      </p>
-    </section>
+      <article class="temple-card">
+        <img src="images/waterfall.jpg" alt="Majestic Waterfall">
+        <h2>Majestic Waterfall</h2>
+        <p>Iguazu Falls, Brazil</p>
+      </article>
 
-    <!-- Card 2 -->
-    <section class="card">
-      <h2>My Hometown</h2>
-      <img src="images/nigeria.jpg" alt="Scenic view of Nigeria">
-      <p>
-        I am from Nigeria, a beautiful country with diverse cultures, languages, and landscapes. 
-        Nigeria is known for its rich traditions, warm hospitality, and resilience. 
-        I’m proud to represent my roots while learning and building globally.
-      </p>
+      <article class="temple-card">
+        <img src="images/mountain.jpg" alt="Snowy Mountain">
+        <h2>Snowy Mountain</h2>
+        <p>Alps, Switzerland</p>
+      </article>
+
+      <article class="temple-card">
+        <img src="images/desert.jpg" alt="Desert Dunes">
+        <h2>Desert Dunes</h2>
+        <p>Sahara, Africa</p>
+      </article>
+      
+      <article class="temple-card">
+        <img src="images/lake.jpg" alt="Crystal Lake">
+        <h2>Crystal Lake</h2>
+        <p>Banff, Canada</p>
+      </article>
+
+      <article class="temple-card">
+        <img src="images/sunset.jpg" alt="Sunset Beach">
+        <h2>Sunset Beach</h2>
+        <p>Bali, Indonesia</p>
+      </article>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> Darlington Okorie | Nigeria</p>
-    <p id="lastModified"></p>
+    <p>&copy; 2025 Nature Album</p>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
