@@ -85,6 +85,17 @@ main h1 {
   gap: 1rem;
 }
 
+/* styles/temples-large.css */
+@media screen and (min-width: 640px) {
+  .album {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  nav ul {
+    display: flex;
+  }
+}
+
+
 figure {
   background: #fff;
   border-radius: 8px;
