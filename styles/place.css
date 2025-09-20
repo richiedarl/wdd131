@@ -1,0 +1,141 @@
+/* =========================
+   Global Variables
+========================= */
+:root {
+  --primary: #004d40;   /* dark green */
+  --secondary: #e53935; /* red */
+  --text: #333;
+  --bg: #f9f9f9;
+  --card-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================
+   Reset & Base
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* =========================
+   Header & Footer
+========================= */
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+}
+
+footer {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   Overlay Cards
+========================= */
+.data, .weather {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: absolute;
+  top: 20px;
+}
+
+.data {
+  left: 20px;
+}
+
+.weather {
+  right: 20px;
+  /* ✅ make the card bigger */
+  width: 260px;
+  padding: 1.2rem;
+
+  /* ✅ push it down towards center */
+  margin-top: 120px;
+}
+
+.data h2, .weather h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.data ul, .weather ul {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.data li, .weather li {
+  margin: 0.4rem 0;
+}
+
+/* Small weather icon */
+.weather img.weather-icon {
+  width: 50px;  /* ✅ slightly bigger */
+  height: 50px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Emoji pseudo-element for wide view */
+.weather h2::after {
+  content: " ⛅";
+  display: inline;
+  margin-left: 0.25rem;
+}
+
+/* =========================
+   Mobile Responsive Layout
+========================= */
+@media (max-width: 767px) {
+  .data, .weather {
+    position: static;
+    width: 100%;
+    max-width: none;
+    margin: 1rem auto;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather {
+    margin-top: 0; /* reset margin for mobile */
+    width: 100%;
+  }
+
+  .weather h2::after {
+    content: ""; /* remove emoji in mobile */
+  }
+
+  .weather img.weather-icon {
+    margin: 0 auto 0.5rem auto;
+  }
+}

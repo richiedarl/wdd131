@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norway - Land of the Midnight Sun</title>
+  <meta name="description" content="Information about Norway including culture, geography, and weather.">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Norway</h1>
+  </header>
+
+<main>
+  <!-- Hero Section with overlay cards -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/norway-large.webp" media="(min-width: 768px)">
+      <img src="images/norway-small.webp" alt="Norwegian fjords landscape">
+    </picture>
+
+    <!-- Overlay Cards -->
+    <div class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Capital:</strong> Oslo</li>
+        <li><strong>Population:</strong> 5.4 million</li>
+        <li><strong>Language:</strong> Norwegian</li>
+        <li><strong>Currency:</strong> Norwegian Krone (NOK)</li>
+        <li><strong>Continent:</strong> Europe</li>
+        <li><strong>Known for:</strong> Fjords & Northern Lights</li>
+      </ul>
+    </div>
+
+    <div class="weather">
+      <h2>Weather</h2>
+      <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+      <ul>
+        <li><strong>Temperature:</strong> <span id="temp">10</span> °C</li>
+        <li><strong>Wind Speed:</strong> <span id="wind">15</span> km/h</li>
+        <li><strong>Condition:</strong> Cloudy</li>
+        <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Darlington Okorie | Norway</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
