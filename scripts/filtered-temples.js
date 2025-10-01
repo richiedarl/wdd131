@@ -106,10 +106,11 @@ function renderCards(data) {
 }
 renderCards(temples);
 
-// Filtering
-document.querySelectorAll("nav button[data-filter]").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const filter = btn.dataset.filter;
+// Filtering (anchor-based)
+document.querySelectorAll("nav a[data-filter]").forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // stop anchor from reloading page
+    const filter = link.dataset.filter;
     let filtered = temples;
     if (filter === "old") {
       filtered = temples.filter(t => parseInt(t.dedicated) < 2000);
@@ -123,3 +124,4 @@ document.querySelectorAll("nav button[data-filter]").forEach(btn => {
     renderCards(filtered);
   });
 });
+
