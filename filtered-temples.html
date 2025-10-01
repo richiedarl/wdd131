@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Filtered Temple Album with dynamic loading and filtering">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Darlington Okorie">
+  <title>Filtered Temples | Temple Album</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Our Favorite Temples</h1>
+    <button class="menu-button" aria-label="Toggle Menu">&#9776;</button>
+    <nav>
+      <ul class="nav-links">
+        <li><button data-filter="all">All</button></li>
+        <li><button data-filter="old">Old (before 2000)</button></li>
+        <li><button data-filter="new">New (2000+)</button></li>
+        <li><button data-filter="large">Large (≥90k sq ft)</button></li>
+        <li><button data-filter="small">Small (&lt;90k sq ft)</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore Our Nature Temple Album</h2>
+    <section class="album" id="temple-container">
+      <!-- Cards injected by JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Temple Album | Last Modified: <span id="lastmodified"></span></p>
+  </footer>
+</body>
+</html>
