@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #1B4332;
+  --secondary-color: #A3B18A;
+  --accent-color: #F4A261;
+  --text-color: #1A1A1A;
+  --bg-color: #F9F9F9;
+}
+
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header img {
+  width: 100px;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+/* Color Samples */
+.color-sample {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: #1B4332;
+}
+
+.accent {
+  background-color: var(--accent-color);
+}
+
+/* Wireframes */
+img.wireframe {
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
