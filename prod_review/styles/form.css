@@ -1,0 +1,115 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header, footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label, legend {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+input, select, textarea {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input[type="submit"] {
+  background: #efac3e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #d18c2f;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* ⭐ Responsive Design */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  input, select, textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  fieldset legend {
+    font-size: 1rem;
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+  }
+}
+
+/* Success Counter Animation */
+#reviewCount {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+  font-weight: bold;
+  color: #efac3e;
+  font-size: 1.5rem;
+}
+
+#reviewCount.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 601px) {
+  form {
+    gap: 1.2rem;
+  }
+
+  input, select, textarea {
+    max-width: 100%;
+  }
+}
