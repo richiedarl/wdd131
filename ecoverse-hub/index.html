@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoVerse Hub — Home</title>
+  <meta name="description" content="EcoVerse Hub: guides, tech reviews, and community stories that help you live sustainably." />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="EcoVerse Hub logo" class="logo" loading="lazy">
+        <h1 class="site-title">EcoVerse Hub</h1>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <img src="assets/img/hero.jpg" alt="" class="hero-img" loading="lazy" aria-hidden="true">
+      <div class="hero-content">
+        <h2 id="hero-heading">Join the Green Revolution</h2>
+        <p class="hero-sub">Small changes. Big impact. Tech-driven and practical tips for everyday sustainable living.</p>
+        <a href="articles.html" class="btn-primary">Explore Articles</a>
+      </div>
+    </section>
+
+    <section id="featured" class="featured">
+      <h2>Featured Articles</h2>
+      <div id="articles-list" class="grid" aria-live="polite">
+        <!-- JS will render article cards here -->
+      </div>
+    </section>
+
+    <section class="highlights">
+      <h2>Green Highlights</h2>
+      <div class="cards">
+        <article class="card small">
+          <h3>Home Energy Tips</h3>
+          <p>Reduce electricity use with low-cost changes — LED, thermostat tweaks, and more.</p>
+        </article>
+        <article class="card small">
+          <h3>Beginner Solar</h3>
+          <p>Understand residential solar basics and if it makes sense for your home.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> EcoVerse Hub — Created by Darlington Okorie</p>
+      <nav aria-label="Footer">
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

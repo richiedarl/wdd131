@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoVerse Hub — Community</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="EcoVerse Hub logo" class="logo" loading="lazy">
+        <h1 class="site-title">EcoVerse Hub</h1>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="community.html" aria-current="page">Community</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="community-intro">
+      <h2>Share Your Eco Story</h2>
+      <p>We welcome short stories, tips, or smart ideas from the community. Fill the form below to submit — your submission will be saved to local storage so you can return and finish it later.</p>
+    </section>
+
+    <section class="submit-form">
+      <form id="story-form" aria-label="Submit story form">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required value="Darlington Okorie">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+        </div>
+
+        <div class="form-row">
+          <label for="title">Story title</label>
+          <input id="title" name="title" type="text" required placeholder="A short title">
+        </div>
+
+        <div class="form-row">
+          <label for="story">Your story (max 1000 chars)</label>
+          <textarea id="story" name="story" rows="8" maxlength="1000" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn-primary">Submit Story</button>
+          <button type="button" id="save-draft" class="btn btn-ghost">Save Draft</button>
+          <span id="form-message" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-3"></span> EcoVerse Hub — Created by Darlington Okorie</p>
+      <nav aria-label="Footer">
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

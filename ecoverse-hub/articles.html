@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoVerse Hub — Articles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="EcoVerse Hub logo" class="logo" loading="lazy">
+        <h1 class="site-title">EcoVerse Hub</h1>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html" aria-current="page">Articles</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="listing">
+      <h2>All Articles</h2>
+
+      <form id="filter-form" class="filter-form" aria-label="Filter articles">
+        <label for="tag">Filter by tag</label>
+        <input id="tag" name="tag" type="text" placeholder="e.g., tech" aria-label="Tag name">
+        <button type="submit" class="btn">Filter</button>
+        <button id="clear-filter" type="button" class="btn btn-ghost">Clear</button>
+      </form>
+
+      <div id="articles-list" class="grid" aria-live="polite">
+        <!-- JS will render article cards here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-2"></span> EcoVerse Hub — Created by Darlington Okorie</p>
+      <nav aria-label="Footer">
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
