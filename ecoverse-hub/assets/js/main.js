@@ -7,21 +7,21 @@ const articles = [
     id: 'a1',
     title: '5 Low-Cost Ways to Green Your Home',
     excerpt: 'Practical, cheap improvements that reduce energy and waste.',
-    img: 'assets/img/article-1.jpg',
+    img: 'assets/images/eco-tips.webp',
     tags: ['home','budget']
   },
   {
     id: 'a2',
     title: 'Solar Tech For Beginners',
     excerpt: 'A gentle intro to residential solar and ROI basics.',
-    img: 'assets/img/article-2.jpg',
+    img: 'assets/images/ecotech-bg.webp',
     tags: ['tech','solar']
   },
   {
     id: 'a3',
     title: 'Zero-Waste Kitchen Habits',
     excerpt: 'Simple swaps that cut waste and save money.',
-    img: 'assets/img/article-3.jpg',
+    img: 'assets/images/green-lifestyle.webp',
     tags: ['lifestyle','kitchen']
   }
 ];
@@ -198,7 +198,7 @@ function attachCommunityForm(){
 
     form.reset();
     const msg = document.querySelector('#form-message');
-    if(msg) msg.textContent = 'Thank you — your story was submitted locally.';
+    if(msg) msg.textContent = 'Thank you — your story was submitted successfully!.';
   });
 }
 
